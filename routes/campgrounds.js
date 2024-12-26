@@ -9,8 +9,13 @@ const upload = multer({ storage });
 
 const Campground = require('../models/campground');
 
+function logMidware(req, res, next) {
+    console.log('Debugging');
+    next();
+}
+
 router.route('/')
-    .get(catchAsync(campgrounds.index))
+    .get(logMidware, catchAsync(campgrounds.index))
     .post(isLoggedIn, upload.array('image'), validateCampground, catchAsync(campgrounds.createCampground))
 
 
