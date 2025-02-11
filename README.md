@@ -1,6 +1,6 @@
 # YelpCamp
 
-Register, review and share your campgrounds with others!
+Wecolme to register, review and share your campgrounds experiences with others!
 
 [**View it in action**](https://yelpcamp-zzw6.onrender.com)
 
